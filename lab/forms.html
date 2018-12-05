@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <link href='./styles/bootstrap.min.css' rel="stylesheet" />
+   </head>
+   <body>
+     <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+              <label for="username" class="control-label col-md-3">Username:</label>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-user">@</span>
+                  </div>
+                  <input type="text" class="form-control" name="username" id="username" />
+                </div>
+              </div>
+            </div>
+          </form>
+     </div>
+     <form class="form-horizontal">
+        <div class="form-group">
+          <div class="col-md-offset-3 btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
+              <input type="radio" id="first" name="sample" />
+              First
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" id="second" name="sample" />
+              Second
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default col-md-offset-3 col-md-4">Submit form</button>
+        </div>
+      </form>
+
+
+
+
+      <form class="form-horizontal">
+          <div class="form-group has-error has-feedback">
+            <label for="address" class="control-label col-md-3">Address:</label>
+            <div class="col-md-6">
+              <input type="text" name="address" id="address" class="form-control" />
+              <!-- Glyphicon is placed after textbox -->
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+          </div>
+         
+          <!-- Input group -->
+          <div class="form-group has-error has-feedback">
+            <label for="username" class="control-label col-md-3">Username:</label>
+            <div class="col-md-6">
+              <div class="input-group">
+                <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-user"></span>
+                </div>
+                <input type="text" class="form-control" name="username" id="username" />
+              </div>
+              <!-- Glyphicon is placed after input group-->
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+          </div>
+        </form>
+
+
+
+
+
+        <div class="container">
+            <div class="alert alert-warning alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <h3>Warning</h3>
+              <div>It appears that something has gone wrong</div>
+            </div>
+          </div>
+
+
+
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+            Launch
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="modelTitleId">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  Body
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+     <!-- content -->
+     <script src='./scripts/jquery-3.3.1.min.js'></script>
+     <script src="./scripts/bootstrap.min.js"></script>
+  </body>
+ </html>
